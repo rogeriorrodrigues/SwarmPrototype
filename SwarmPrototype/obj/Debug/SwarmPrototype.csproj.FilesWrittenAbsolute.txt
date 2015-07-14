@@ -1,0 +1,7 @@
+/Users/kstutesman/Desktop/SwarmPrototype/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/kstutesman/Desktop/SwarmPrototype/bin/Debug/Xamarin.Forms.Core.dll
+/Users/kstutesman/Desktop/SwarmPrototype/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/kstutesman/Desktop/SwarmPrototype/bin/Debug/SwarmPrototype.dll.mdb
+/Users/kstutesman/Desktop/SwarmPrototype/bin/Debug/SwarmPrototype.dll
+/Users/kstutesman/Desktop/SwarmPrototype/obj/Debug/SwarmPrototype.dll
+/Users/kstutesman/Desktop/SwarmPrototype/obj/Debug/SwarmPrototype.dll.mdb

@@ -1,0 +1,7 @@
+/Users/kstutesman/Desktop/SwarmPrototype/UITests/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/kstutesman/Desktop/SwarmPrototype/UITests/bin/Debug/SwarmPrototype.UITests.dll.mdb
+/Users/kstutesman/Desktop/SwarmPrototype/UITests/bin/Debug/SwarmPrototype.UITests.dll
+/Users/kstutesman/Desktop/SwarmPrototype/UITests/obj/Debug/SwarmPrototype.UITests.dll
+/Users/kstutesman/Desktop/SwarmPrototype/UITests/obj/Debug/SwarmPrototype.UITests.dll.mdb
+/Users/kstutesman/Desktop/SwarmPrototype/UITests/bin/Debug/nunit.framework.dll
+/Users/kstutesman/Desktop/SwarmPrototype/UITests/bin/Debug/Xamarin.UITest.dll
