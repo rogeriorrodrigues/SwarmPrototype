@@ -1,9 +1,9 @@
-﻿<Properties StartupItem="Droid/SwarmPrototype.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProfilePage.cs">
+﻿<Properties StartupItem="iOS/SwarmPrototype.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoginPage.xaml">
     <Files>
-      <File FileName="ActivityFeedPage.cs" Line="128" Column="36" />
-      <File FileName="ProfilePage.cs" Line="63" Column="18" />
+      <File FileName="LoginPage.xaml" Line="28" Column="27" />
+      <File FileName="LoginPage.xaml.cs" Line="18" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

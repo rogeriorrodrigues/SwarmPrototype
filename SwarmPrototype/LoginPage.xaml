@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SwarmPrototype.LoginPage">
+	<ContentPage.Content>
+		<StackLayout
+			Padding="0,200,0,0"
+			BackgroundColor="#f39c12"
+			VerticalOptions="FillAndExpand"
+			Spacing="20">
+
+			<Label
+				Text="Log in with your Foursquare account"
+				TextColor="White"
+				HorizontalOptions="Center"/>
+
+			<StackLayout
+				HorizontalOptions="FillAndExpand"
+				Spacing="0">
+				<Entry
+					Placeholder="Username"/>
+				<Entry
+					Placeholder="Password"/>
+			</StackLayout>
+
+			<StackLayout
+				Orientation="Horizontal"
+				HorizontalOptions="CenterAndExpand"
+				Spacing="30">
+
+				<Button
+					x:Name="buttonCancel"
+					Text="Cancel"
+					TextColor="White"
+					BackgroundColor="#f39c12"
+					BorderRadius="15"
+					BorderColor="White"
+					BorderWidth="2"
+					HeightRequest="40"
+					WidthRequest="150"/>
+
+				<Button
+					x:Name="buttonLogin"
+					Text="Log in"
+					TextColor="#f39c12"
+					BackgroundColor="White"
+					BorderRadius="15"
+					HeightRequest="40"
+					WidthRequest="150"/>
+
+			</StackLayout>
+
+			<Button 
+				x:Name="buttonForgot"
+				Text="Forgot your password?"
+				TextColor="White"
+				BackgroundColor="Transparent"/>
+
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
