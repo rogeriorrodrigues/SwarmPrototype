@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SwarmPrototype.ActivityFeedPage">
+	<ContentPage.Content>
+
+	<StackLayout>
+
+		<StackLayout
+			Orientation="Horizontal"
+			HorizontalOptions="FillAndExpand"
+			HeightRequest="50"
+			BackgroundColor="#FFA733">
+			<StackLayout.Padding>
+				<OnPlatform x:TypeArguments="Thickness"
+							iOS="10, 20, 10, 5"
+	                		Android="10, 0, 10, 5"
+	                		WinPhone="10, 0, 10, 5"/>
+			</StackLayout.Padding>
+
+			<Image
+				Source="profile.png"
+				HeightRequest="40"
+				WidthRequest="40"/>
+
+			<Label
+				Text="in"
+				TextColor="White"
+				VerticalOptions="Center"/>
+
+			<Label
+				Text="East Harlem"
+				TextColor="White"
+				FontAttributes="Bold"
+				VerticalOptions="Center"/>
+		</StackLayout>
+
+		<ListView
+			x:Name="listView"
+			BackgroundColor="White"
+		
+			HasUnevenRows="true">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+			          	<ViewCell.View>
+			            	<StackLayout
+			            		Padding="15"
+			            		Orientation="Horizontal">
+
+			            			<Image
+										Source="profile.png"
+										HeightRequest="50"
+										WidthRequest="50"/>
+
+									<StackLayout
+										Orientation="Vertical"
+										Spacing="2"
+										VerticalOptions="Center">
+
+										<Label 
+											Text="{Binding Name}"
+											TextColor="Black"
+											FontSize="12"
+											FontAttributes="Bold"/>
+										<Label 
+											Text="{Binding LastCheckIn}"
+											TextColor="#FFA733"
+											FontSize="20"/>
+										<Label 
+											Text="{Binding Location}"
+											TextColor="Gray"
+											FontSize="14"/>
+										<Label 
+											Text="{Binding Status}"
+											TextColor="Black"
+											FontSize="16"/>
+									</StackLayout>
+
+									<StackLayout
+										Padding="15"
+										HorizontalOptions="EndAndExpand">
+										<Label
+											Text="♡"
+											TextColor="#FFA733"
+											FontSize="16"/>
+										<Label
+											Text="10m"
+											TextColor="Gray"
+											FontSize="13"/>
+									</StackLayout>
+				            	</StackLayout>
+				          	</ViewCell.View>
+				        </ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

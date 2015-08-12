@@ -57,7 +57,6 @@ namespace SwarmPrototype
 
 			var listView = new ListView {
 				BackgroundColor = Color.White,
-				ItemsSource = users,
 				HasUnevenRows = true,
 				ItemTemplate = new DataTemplate(() =>
 				{
