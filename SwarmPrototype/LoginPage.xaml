@@ -3,7 +3,7 @@
 	<ContentPage.Content>
 		<StackLayout
 			Padding="0,200,0,0"
-			BackgroundColor="#f39c12"
+			BackgroundColor="#FFA733"
 			VerticalOptions="FillAndExpand"
 			Spacing="20">
 
@@ -30,7 +30,7 @@
 					x:Name="buttonCancel"
 					Text="Cancel"
 					TextColor="White"
-					BackgroundColor="#f39c12"
+					BackgroundColor="#FFA733"
 					BorderRadius="15"
 					BorderColor="White"
 					BorderWidth="2"
@@ -40,7 +40,7 @@
 				<Button
 					x:Name="buttonLogin"
 					Text="Log in"
-					TextColor="#f39c12"
+					TextColor="#FFA733"
 					BackgroundColor="White"
 					BorderRadius="15"
 					HeightRequest="40"
