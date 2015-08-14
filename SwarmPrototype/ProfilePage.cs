@@ -10,7 +10,7 @@ namespace SwarmPrototype
 		public ProfilePage (User user)
 		{
 			Content = new StackLayout {
-				Padding = new Thickness(10, Device.OnPlatform(40, 20, 20), 10, 5),
+				Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5),
 				BackgroundColor = Color.FromHex("f39c12"),
 				Spacing = 20,
 				Children = {

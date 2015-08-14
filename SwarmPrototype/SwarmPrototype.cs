@@ -11,7 +11,7 @@ namespace SwarmPrototype
 			// The root page of your application
 			MainPage = new NavigationPage(new LoginPage())
 			{
-				BarBackgroundColor = Color.Transparent,
+				BarBackgroundColor = Color.FromHex("#FFA733"),
 				BarTextColor = Color.White
 			};
 		}

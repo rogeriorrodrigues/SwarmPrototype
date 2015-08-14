@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SwarmPrototype.ProfilePage">
+	<ContentPage.Content>
+
+	<StackLayout
+		x:Name="mainStack"
+		Spacing="20"
+		BackgroundColor="#FFA733">
+		<StackLayout.Padding>
+			<OnPlatform x:TypeArguments="Thickness"
+						iOS="0, 40, 0, 5"
+                		Android="0, 20, 0, 5"
+                		WinPhone="0, 20, 0, 5"/>
+		</StackLayout.Padding>
+
+		<StackLayout
+			Padding="10"
+			HorizontalOptions="Center">
+			<Image
+				Source="profile.png"
+				HeightRequest="100"
+				WidthRequest="100"/>
+			<Label
+				Text="{Binding Name}"
+				TextColor="White"
+				HorizontalOptions="Center"
+				FontSize="20"/>
+			<Label
+				Text="{Binding Location}"
+				TextColor="White"
+				FontSize="14"
+				HorizontalOptions="Center"
+				FontAttributes="Bold"/>
+			<Label
+				Text="Last seen in Boston, MA"
+				TextColor="White"
+				FontSize="14"
+				HorizontalOptions="Center"/>				
+			<Label
+				Text="{Binding Description}"
+				TextColor="White"
+				FontSize="14"
+				HorizontalOptions="Center"
+				Opacity="0.8"/>
+			<StackLayout
+				Orientation="Horizontal"
+				HorizontalOptions="Center"
+				Spacing="15">
+				<Button 
+					Text="✓ Friends"
+					BorderRadius="15"
+					TextColor="#FFA733"
+					BackgroundColor="White"
+					WidthRequest="150"
+					HeightRequest="35"/>
+				<Button 
+					Text="Alerts Off"
+					BorderRadius="15"
+					BorderColor="White"
+					BorderWidth="2"
+					TextColor="White"
+					BackgroundColor="Transparent"
+					WidthRequest="150"
+					HeightRequest="35"/>
+			</StackLayout>	
+
+			<StackLayout
+				Orientation="Horizontal"
+				HorizontalOptions="FillAndExpand"
+				Padding="0,20,0,20"
+				Spacing="2">
+				<StackLayout
+					HeightRequest="50"
+					VerticalOptions="Center"
+					HorizontalOptions="FillAndExpand"
+					BackgroundColor="#e67e22">
+					<Label
+						VerticalOptions="Center"
+						HorizontalOptions="Center"
+						Text="805 Friends"
+						TextColor="White"/>
+				</StackLayout>
+				<StackLayout
+					HeightRequest="50"
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center"
+					BackgroundColor="#e67e22">
+					<Label
+						VerticalOptions="Center"
+						HorizontalOptions="Center"
+						Text="2,003 Photos"
+						TextColor="White"/>
+				</StackLayout>
+			</StackLayout>	
+		</StackLayout>
+
+	</StackLayout>
+		
+	</ContentPage.Content>
+</ContentPage>
