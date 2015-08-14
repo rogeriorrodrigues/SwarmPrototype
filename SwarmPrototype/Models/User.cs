@@ -9,17 +9,13 @@ namespace Prototype.Models
 		public string LastCheckIn { get; private set; }
 		public string Location { get; private set; }
 		public string Status { get; private set; }
-		public int PhotoCount { get; private set; }
-		public int FriendCount { get; private set; }
 
-		public User (string name, string description, string lastCheckIn, string location, int photoCount, int friendCount, string status = "")
+		public User (string name, string description, string lastCheckIn, string location, string status = "")
 		{
 			Name = name;
 			Description = description;
 			LastCheckIn = lastCheckIn;
 			Location = location;
-			PhotoCount = photoCount;
-			FriendCount = friendCount;
 			Status = status;
 		}
 	}
