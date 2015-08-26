@@ -11,7 +11,7 @@ namespace SwarmPrototype
 		public ProfilePage (User user)
 		{
 			InitializeComponent ();
-			mainStack.BindingContext = user;
+			BindingContext = user;
 			ToolbarItems.Add(new ToolbarItem("Contact", null, async () => {
 				await DisplayAlert("Contact", "You clicked the contact button!", "Okay...");
 			}));

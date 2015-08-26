@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SwarmPrototype.ProfilePage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="SwarmPrototype.ProfilePage"
+			 BackgroundColor="#FFA733">
 	<ContentPage.Content>
 
-	<StackLayout
-		x:Name="mainStack"
-		Spacing="20"
-		BackgroundColor="#FFA733">
-		<StackLayout.Padding>
+	<ScrollView>
+		<ScrollView.Padding>
 			<OnPlatform x:TypeArguments="Thickness"
-						iOS="0, 40, 0, 5"
-                		Android="0, 20, 0, 5"
-                		WinPhone="0, 20, 0, 5"/>
-		</StackLayout.Padding>
+						iOS="0, 30, 0, 5"
+                		Android="0, 10, 0, 5"
+                		WinPhone="0, 10, 0, 5"/>
+		</ScrollView.Padding>
 
 		<StackLayout
 			Padding="10"
@@ -51,7 +51,7 @@
 					BorderRadius="15"
 					TextColor="#FFA733"
 					BackgroundColor="White"
-					WidthRequest="150"
+					WidthRequest="130"
 					HeightRequest="35"/>
 				<Button 
 					Text="Alerts Off"
@@ -60,7 +60,7 @@
 					BorderWidth="2"
 					TextColor="White"
 					BackgroundColor="Transparent"
-					WidthRequest="150"
+					WidthRequest="130"
 					HeightRequest="35"/>
 			</StackLayout>	
 
@@ -75,7 +75,7 @@
 					HorizontalOptions="FillAndExpand"
 					BackgroundColor="#e67e22">
 					<Label
-						VerticalOptions="Center"
+						VerticalOptions="CenterAndExpand"
 						HorizontalOptions="Center"
 						Text="805 Friends"
 						TextColor="White"/>
@@ -83,10 +83,10 @@
 				<StackLayout
 					HeightRequest="50"
 					HorizontalOptions="FillAndExpand"
-					VerticalOptions="Center"
+					VerticalOptions="CenterAndExpand"
 					BackgroundColor="#e67e22">
 					<Label
-						VerticalOptions="Center"
+						VerticalOptions="CenterAndExpand"
 						HorizontalOptions="Center"
 						Text="2,003 Photos"
 						TextColor="White"/>
@@ -94,7 +94,7 @@
 			</StackLayout>	
 		</StackLayout>
 
-	</StackLayout>
+	</ScrollView>
 		
 	</ContentPage.Content>
 </ContentPage>
