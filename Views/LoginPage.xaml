@@ -4,57 +4,66 @@
 			 x:Class="SwarmPrototype.LoginPage"
 			 BackgroundColor="#FFA733">
 	<ContentPage.Content>
-		<StackLayout
-			VerticalOptions="CenterAndExpand"
-			Spacing="20">
+
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="150"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
 
 			<Label
+				Grid.ColumnSpan="2"
 				Text="Log in with your Foursquare account"
 				TextColor="White"
+				VerticalOptions="Center"
 				HorizontalOptions="Center"/>
 
-			<StackLayout
-				HorizontalOptions="FillAndExpand"
-				Spacing="0">
-				<Entry
-					Placeholder="Username"/>
-				<Entry
-					Placeholder="Password"/>
-			</StackLayout>
+			<Entry
+				Grid.Row="1"
+				Grid.ColumnSpan="2"
+				Placeholder="Username"/>
+			<Entry
+				Grid.Row="2"
+				Grid.ColumnSpan="2"
+				Placeholder="Password"/>
 
-			<StackLayout
-				Orientation="Horizontal"
-				HorizontalOptions="CenterAndExpand"
-				Spacing="30">
+			<Button
+				Grid.Row="3"
+				x:Name="buttonCancel"
+				Text="Cancel"
+				TextColor="White"
+				BackgroundColor="#FFA733"
+				BorderRadius="15"
+				BorderColor="White"
+				BorderWidth="2"
+				HeightRequest="40"
+				WidthRequest="120"/>
 
-				<Button
-					x:Name="buttonCancel"
-					Text="Cancel"
-					TextColor="White"
-					BackgroundColor="#FFA733"
-					BorderRadius="15"
-					BorderColor="White"
-					BorderWidth="2"
-					HeightRequest="40"
-					WidthRequest="120"/>
+			<Button
+				Grid.Row="3"
+				Grid.Column="1"
+				x:Name="buttonLogin"
+				Text="Log in"
+				TextColor="#FFA733"
+				BackgroundColor="White"
+				BorderRadius="15"
+				HeightRequest="40"
+				WidthRequest="120"/>
 
-				<Button
-					x:Name="buttonLogin"
-					Text="Log in"
-					TextColor="#FFA733"
-					BackgroundColor="White"
-					BorderRadius="15"
-					HeightRequest="40"
-					WidthRequest="120"/>
-
-			</StackLayout>
-
-			<Button 
+			<Button
+				Grid.Row="4"
+				Grid.ColumnSpan="2"
 				x:Name="buttonForgot"
 				Text="Forgot your password?"
 				TextColor="White"
 				BackgroundColor="Transparent"/>
-
-		</StackLayout>
+		</Grid>
 	</ContentPage.Content>
 </ContentPage>
