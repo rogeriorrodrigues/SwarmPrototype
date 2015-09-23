@@ -42,57 +42,70 @@
 				<DataTemplate>
 					<ViewCell>
 			          	<ViewCell.View>
-			            	<StackLayout
-			            		Padding="15"
-			            		Orientation="Horizontal">
 
-			            			<Image
-										Source="profile.png"
-										HeightRequest="50"
-										WidthRequest="50"/>
+			          	<Grid>
+			          		<Grid.RowDefinitions>
+			          			<RowDefinition Height="Auto"/>
+			          			<RowDefinition Height="Auto"/>
+			          			<RowDefinition Height="Auto"/>
+			          			<RowDefinition Height="Auto"/>
+			          		</Grid.RowDefinitions>
+			          		<Grid.ColumnDefinitions>
+			          			<ColumnDefinition Width="Auto"/>
+			          			<ColumnDefinition Width="*"/>
+			          			<ColumnDefinition Width="Auto"/>
+			          		</Grid.ColumnDefinitions>
 
-									<StackLayout
-										Orientation="Vertical"
-										Spacing="2"
-										VerticalOptions="Center">
+				          		<Image
+				          			Grid.RowSpan="4"
+									Source="profile.png"
+									HeightRequest="50"
+									WidthRequest="50"/>
 
-										<Label 
-											Text="{Binding Name}"
-											TextColor="Black"
-											FontSize="12"
-											FontAttributes="Bold"/>
-										<Label 
-											Text="{Binding LastCheckIn}"
-											TextColor="#FFA733"
-											FontSize="20"/>
-										<Label 
-											Text="{Binding Location}"
-											TextColor="Gray"
-											FontSize="14"/>
-										<Label 
-											Text="{Binding Status}"
-											TextColor="Black"
-											FontSize="16"/>
-									</StackLayout>
+								<Label
+									Grid.Column="1" 
+									Text="{Binding Name}"
+									TextColor="Black"
+									FontSize="12"
+									FontAttributes="Bold"/>
+								<Label 
+									Grid.Row="1"
+									Grid.Column="1" 
+									Text="{Binding LastCheckIn}"
+									TextColor="#FFA733"
+									FontSize="20"/>
+								<Label 
+									Grid.Row="2"
+									Grid.Column="1" 
+									Text="{Binding Location}"
+									TextColor="Gray"
+									FontSize="14"/>
+								<Label 
+									Grid.Row="3"
+									Grid.Column="1" 
+									Text="{Binding Status}"
+									TextColor="Black"
+									FontSize="16"/>
+								<Label
+									Grid.RowSpan="2"
+									Grid.Column="2"
+									Text="♡"
+									TextColor="#FFA733"
+									FontSize="16"/>
+								<Label
+									Grid.Row="2"
+									Grid.RowSpan="2"
+									Grid.Column="2"
+									Text="10m"
+									TextColor="Gray"
+									FontSize="13"/>
+			          	</Grid>
+				        </ViewCell.View>
+			        </ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</StackLayout>
 
-									<StackLayout
-										Padding="15"
-										HorizontalOptions="EndAndExpand">
-										<Label
-											Text="♡"
-											TextColor="#FFA733"
-											FontSize="16"/>
-										<Label
-											Text="10m"
-											TextColor="Gray"
-											FontSize="13"/>
-									</StackLayout>
-				            	</StackLayout>
-				          	</ViewCell.View>
-				        </ViewCell>
-					</DataTemplate>
-				</ListView.ItemTemplate>
-			</ListView>
-		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
