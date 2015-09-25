@@ -1,12 +1,12 @@
-﻿<Properties StartupItem="iOS/SwarmPrototype.iOS.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.4" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProfilePage.xaml">
+﻿<Properties StartupItem="Droid/SwarmPrototype.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/LoginPage.xaml.cs">
     <Files>
-      <File FileName="ProfilePage.xaml" Line="86" Column="30" />
-      <File FileName="ProfilePage.xaml.cs" Line="17" Column="8" />
-      <File FileName="iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="SwarmPrototype.cs" Line="14" Column="50" />
-      <File FileName="LoginPage.xaml" Line="16" Column="37" />
+      <File FileName="Views/LoginPage.xaml" Line="1" Column="1" />
+      <File FileName="Views/ActivityFeedPage.xaml" Line="1" Column="1" />
+      <File FileName="Views/ProfilePage.xaml" Line="1" Column="1" />
+      <File FileName="Views/ProfilePage.xaml.cs" Line="17" Column="8" />
+      <File FileName="Views/LoginPage.xaml.cs" Line="14" Column="53" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
